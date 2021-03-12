@@ -1,0 +1,22 @@
+<br>
+<div class="container">
+  <h1 style="text-align: center">Update Form</h1>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Title : </label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="book.title">
+    </div>
+    <div class="form-group">
+      <label for="name">Author : </label>
+      <input type="text" class="form-control" id="email" name="email" [(ngModel)]="book.author">
+    </div>
+    <div class="form-group">
+      <label for="name">Description : </label>
+      <textarea #desv="ngModel" rows="9" cols="70" type="text" class="form-control" id="phone" name="phone" [(ngModel)]="book.description" required></textarea>
+      <td><p *ngIf="desv?.errors?.required">Mời nhập đầy đủ thông tin</p></td>
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+
+</div>

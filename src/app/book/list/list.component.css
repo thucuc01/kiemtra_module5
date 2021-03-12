@@ -1,0 +1,11 @@
+table{
+  width: 100%;
+}
+#modal{
+  display: none;
+  border:gainsboro solid;
+  width: 350px;
+  height:110px;
+  text-align: center;
+  background: #d6d8db;
+}
